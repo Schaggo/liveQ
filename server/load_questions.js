@@ -10,7 +10,6 @@ var startq = {
 };
 
 
-}];
 
 knex('questions').del().then(function() {
   return knex('questions').insert(startq);
