@@ -9,7 +9,12 @@ var startq = {
   'show': true
 };
 
-
+var qs = [
+{
+  'question': 'What was Oscar the Grouch\'s original color?',
+  'answers': ['Orange', 'Red', 'Yello'],
+  'answer_index': 1
+}];
 
 knex('questions').del().then(function() {
   return knex('questions').insert(startq);
